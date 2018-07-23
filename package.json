@@ -1,0 +1,24 @@
+{
+  "name": "mountain-site",
+  "version": "1.0.0",
+  "description": "Minimalist website about mountains",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigblobby/minimalistmountain.git"
+  },
+  "keywords": [
+    "Minimalist",
+    "Clean",
+    "Mountains"
+  ],
+  "author": "Tom Dempster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigblobby/minimalistmountain/issues"
+  },
+  "homepage": "https://github.com/bigblobby/minimalistmountain#readme"
+}
