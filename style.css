@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-.container{
+.mt-container{
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,7 +24,7 @@ body {
 
 /*-----------------------Main content--------------------------*/
 
-.content {
+.mt-content {
   position: relative;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ body {
 
 /*-----Navigation-----*/
 
-.fa-bars {
+.mt-fa-bars {
   font-size: 1em;
   position: absolute;
   top: 20px;
@@ -44,16 +44,16 @@ body {
   z-index: 100;
 }
 
-.menu-checkbox {
+.mt-menu-checkbox {
   display: none;
 }
 
-.menu-checkbox:checked + label {
+.mt-menu-checkbox:checked + label {
   color: #fff;
   z-index: 101;
 }
 
-.main-nav {
+.mt-main-nav {
   position: absolute;
   background: #000;
   width: 100%;
@@ -65,20 +65,20 @@ body {
   transition: height 0.5s, visibility 0.5s, opacity 0.5s;
 }
 
-.main-nav ul {
+.mt-main-nav ul {
   list-style: none;
   text-align: right;
 }
 
-.main-nav li:first-of-type{
+.mt-main-nav li:first-of-type{
   margin-top: 50px;
 }
 
-.main-nav li {
+.mt-main-nav li {
   margin-bottom: 10px;
 }
 
-.main-nav a{
+.mt-main-nav a{
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -88,12 +88,12 @@ body {
   transition: transform 0.3s, color 0.3s;
 }
 
-.main-nav a:hover {
+.mt-main-nav a:hover {
   transform: scale(1.1);
   color: #888888;
 }
 
-.main-nav button{
+.mt-main-nav button{
   display: block;
   text-decoration: none;
   color: #fff;
@@ -107,40 +107,40 @@ body {
   text-align: right;
 }
 
-.menu-checkbox:checked ~ .main-nav {
+.mt-menu-checkbox:checked ~ .mt-main-nav {
   opacity: 0.8;
   height: 100vh;
   visibility: visible;
 }
 
-.main-nav li{
+.mt-main-nav li{
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.menu-checkbox:checked ~ .main-nav li{
+.mt-menu-checkbox:checked ~ .mt-main-nav li{
   transform: translateX(-30px);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.menu-checkbox:checked ~ .main-nav li:nth-of-type(1){
+.mt-menu-checkbox:checked ~ .mt-main-nav li:nth-of-type(1){
   transition-delay: 0.2s;
   opacity: 1;
 }
 
-.menu-checkbox:checked ~ .main-nav li:nth-of-type(2){
+.mt-menu-checkbox:checked ~ .mt-main-nav li:nth-of-type(2){
   transition-delay: 0.3s;
   opacity: 1;
 }
 
-.menu-checkbox:checked ~ .main-nav li:nth-of-type(3){
+.mt-menu-checkbox:checked ~ .mt-main-nav li:nth-of-type(3){
   transition-delay: 0.4s;
   opacity: 1;
 }
 
 /*-----Inner Box content-----*/
 
-.inner-box {
+.mt-inner-box {
   text-align: center;
   width: 80%;
   height: 40%;
@@ -155,23 +155,23 @@ body {
   animation-fill-mode: forwards;
 }
 
-.inner-box h1 {
+.mt-inner-box h1 {
   font-family: 'Mountains of Christmas',sans-serif;
 /*  display: block;*/
   font-size: 3em;
 }
 
-.inner-box p {
+.mt-inner-box p {
   padding: 1em;
 }
 
-.inner-box a {
+.mt-inner-box a {
   display: inline-block;
   text-decoration: none;
   color: #8d8d8d;
 }
 
-.inner-box .fa-arrow-right {
+.mt-inner-box .fa-arrow-right {
   position: relative;
   padding: 1em 3em;
   font-size: 1.2em;
@@ -179,7 +179,7 @@ body {
   color: #156d25;
 }
 
-.inner-box .fa-arrow-right span {
+.mt-inner-box .fa-arrow-right span {
   font-family: 'Josefin Sans';
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -192,7 +192,7 @@ body {
 
 /*-----Main image-----*/
 
-.image {
+.mt-image {
   background-image: url(img/image1.jpg);
   background-position: center;
   background-size: cover;
@@ -203,7 +203,7 @@ body {
 
 /*-----Secondary mountain content-----*/
 
-.mountains {
+.mt-mountains {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
@@ -213,11 +213,11 @@ body {
   overflow-y: hidden;
 }
 
-.mountains h2 {
+.mt-mountains h2 {
   font-size: 3em;
 }
 
-.mountains-content {
+.mt-mountains-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -227,15 +227,15 @@ body {
   padding: 2em;
 }
 
-.mountains-content h2 {
+.mt-mountains-content h2 {
   color: #156d25;
 }
 
-.mountains-content p {
+.mt-mountains-content p {
   text-align: justify;
 }
 
-.mountains-content .fa-arrow-down {
+.mt-mountains-content .fa-arrow-down {
   position: relative;
   padding: 1em 3em;
   font-size: 1.2em;
@@ -247,7 +247,7 @@ body {
   outline: none;
 }
 
-.mountains-content .fa-arrow-down span {
+.mt-mountains-content .fa-arrow-down span {
   font-family: 'Josefin Sans';
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -257,7 +257,7 @@ body {
   left: 35%;
 }
 
-.mountains-image {
+.mt-mountains-image {
   background-image: url(img/image2.jpg);
   background-position: center;
   background-size: cover;
@@ -269,7 +269,7 @@ body {
 
 /*---------------------------Contact--------------------------*/
 
-.contact {
+.mt-contact {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -284,12 +284,12 @@ body {
   transition: height 1s;
 }
 
-.contact h2 {
+.mt-contact h2 {
   opacity: 0;
   color: #fff;
 }
 
-.contact-cross {
+.mt-contact-cross {
   color: #c9c9c9;
   display: none;
   cursor: pointer;
@@ -301,7 +301,7 @@ body {
 
 /*---------------------------About Us--------------------------*/
 
-.slide-up {
+.mt-slide-up {
   position: absolute;
   display: none;
 /*  bottom: 0;*/
@@ -312,7 +312,7 @@ body {
   transition: all 1s;
 }
 
-.slide-up-arrow {
+.mt-slide-up-arrow {
   position: relative;
   padding: 1em 3em;
   font-size: 1.2em;
@@ -330,7 +330,7 @@ body {
 */
 }
 
-.slide-up-arrow span {
+.mt-slide-up-arrow span {
   font-family: 'Josefin Sans';
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -340,43 +340,43 @@ body {
   left: 35%;
 }
 
-.slide-grid {
+.mt-slide-grid {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
 
-.slide-grid img {
+.mt-slide-grid img {
   display: block;
   width: 65%;
 /*  height: 100%;*/
 }
 
-.slide-img-1,
-.slide-img-2,
-.slide-img-3 {
+.mt-slide-img-1,
+.mt-slide-img-2,
+.mt-slide-img-3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.slide-img-1 {
+.mt-slide-img-1 {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
-.slide-img-2 {
+.mt-slide-img-2 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
-.slide-img-3 {
+.mt-slide-img-3 {
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.slide-content {
+.mt-slide-content {
   grid-column: 2/3;
   grid-row: 1/4;
   display: flex;
@@ -386,11 +386,11 @@ body {
   padding-right: 5.875em;
 }
 
-.slide-info {
+.mt-slide-info {
   flex-basis: 80%;
 }
 
-.slide-info p {
+.mt-slide-info p {
   margin-bottom: 1em;
   text-align: justify;
 }
@@ -406,83 +406,83 @@ body {
 
 @media(max-width: 1000px) {
   
-  .main-nav {
+  .mt-main-nav {
     position: fixed;
   }
   
-  .fa-bars {
+  .mt-fa-bars {
     position: fixed;
   }
   
-  .menu-checkbox:checked ~ .main-nav {
+  .mt-menu-checkbox:checked ~ .mt-main-nav {
     top: 0;
     height: 30vh;
   }
   
-  .container{
+  .mt-container{
     height: 200vh;
     grid-template-columns: 100%;
     grid-template-rows: 30% 20% 25% 25%;
   }
   
-  .content {
+  .mt-content {
     grid-column: 1/2;
     grid-row: 1/2;
   }
   
-  .inner-box {
+  .mt-inner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   
-  .image {
+  .mt-image {
     grid-column: 1/2;
     grid-row: 2/3;
   }
   
-  .mountains {
+  .mt-mountains {
     opacity: 1;
     grid-column: 1/2;
     grid-row: 3/5;
   }
   
-  .slide-up {
+  .mt-slide-up {
     
   }
 }
 
 @media(max-width: 740px) {
   
-  .slide-grid {
+  .mt-slide-grid {
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
   
-  .slide-up-arrow span {
+  .mt-slide-up-arrow span {
     top: 70%;
   }
   
-  .slide-grid img {
+  .mt-slide-grid img {
     width: 75%;
   }
   
-  .slide-img-1 {
+  .mt-slide-img-1 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
   
-  .slide-img-2 {
+  .mt-slide-img-2 {
     display: none;
   }
   
-  .slide-img-3 {
+  .mt-slide-img-3 {
     display: none;
   }
 
-  .slide-content {
+  .mt-slide-content {
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -495,16 +495,16 @@ body {
 }
 
 @media(max-width: 450px) {
-  .container{
+  .mt-container{
 /*    grid-template-rows: 60% 40% 50% 50%;*/
   }
   
-  .fa-bars {
+  .mt-fa-bars {
     top: 10px;
     right: 10px;
   }
   
-  .inner-box {
+  .mt-inner-box {
     width: 80%;
     height: 80%;
     box-shadow: none;
@@ -513,7 +513,7 @@ body {
 
 @media(max-width: 361px) {
   
-  .inner-box h1 {
+  .mt-inner-box h1 {
     font-size: 2.5em;
   }
 }

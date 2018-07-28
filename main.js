@@ -1,16 +1,16 @@
-const container = document.getElementById('container');
-const menu = document.getElementById('menu');
-const mainNav = document.getElementById('main-nav');
-const innerBox = document.getElementById('inner-box');
-const seeMore = document.getElementById('see-more');
-const mainImage = document.getElementById('main-image');
-const mountains = document.getElementById('mountains');
-const mountainsArrow = document.getElementById('mountains-arrow');
-const contact = document.getElementById('contact');
-const contactText = document.getElementById('contact-me');
-const contactCross = document.getElementById('contact-cross');
-const slideUp = document.getElementById('slide-up');
-const slideUpArrow = document.getElementById('slide-up-arrow');
+const container = document.getElementById('mt-container');
+const menu = document.getElementById('mt-menu');
+const mainNav = document.getElementById('mt-main-nav');
+const innerBox = document.getElementById('mt-inner-box');
+const seeMore = document.getElementById('mt-see-more');
+const mainImage = document.getElementById('mt-main-image');
+const mountains = document.getElementById('mt-mountains');
+const mountainsArrow = document.getElementById('mt-mountains-arrow');
+const contact = document.getElementById('mt-contact');
+const contactText = document.getElementById('mt-contact-me');
+const contactCross = document.getElementById('mt-contact-cross');
+const slideUp = document.getElementById('mt-slide-up');
+const slideUpArrow = document.getElementById('mt-slide-up-arrow');
 
 const width = window.matchMedia("(max-width: 1000px)")
 
